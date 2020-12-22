@@ -7,7 +7,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 // Token
 process.env.SEED = process.env.SEED || 'secret-dev';
 // 30dias
-process.env.CAD_TOKEN = 60 * 60 * 24 * 30;
+process.env.CAD_TOKEN = 1000 * 60 * 60 * 24 * 30;
 
 
 // Base de datos
@@ -20,3 +20,6 @@ if (process.env.NODE_ENV === 'dev') {
 }
 
 process.env.URLDB = urlDB;
+
+// Client ID google:
+process.env.CLIENT_ID = process.env.CLIENT_ID || '1080488399007-as831kvojna7k5rne18qjd5d9sorm4ce.apps.googleusercontent.com';

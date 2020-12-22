@@ -59,7 +59,7 @@ app.post('/usuario', [verificaToken, verificaAdminRole], (req, res) => {
             });
         }
 
-        res.json({
+        res.status(201).json({
             ok: true,
             usuario: usuarioDB
         })
